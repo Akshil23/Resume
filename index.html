@@ -3,39 +3,59 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Glad to See You Here!</title>
+<title>Glad to See You Here! 😄</title>
 <style>
   body {
-    background-color: purple;
+    background: url('https://www.treehugger.com/thmb/CuTzoTtXv9ThPkwdSxHREceRFU8=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/scenic-view-of-silhouette-mountains-against-sky-during-sunset-1325186919-166516c836d644dd953f34a3b7fe9c7f.jpg') center/cover no-repeat fixed;
+    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    animation: moveSky 20s linear infinite alternate; /* Add the animation */
+  }
+  
+  /* Add the animation keyframes */
+  @keyframes moveSky {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 100% 0;
+    }
+  }
+  
+  .container {
+    padding: 30px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Blended background color */
+    box-shadow: none; /* Remove the box-shadow */
   }
   h1 {
-    color: white;
-    text-align: center;
-    font-size: 24px;
-    margin-bottom: 20px;
+    font-size: 36px;
+    margin-bottom: 15px;
+    color: #ffd700; /* Attractive text color (Golden Yellow) */
   }
   a {
-    display: block;
-    text-align: center;
+    display: inline-block;
+    background-color: #333;
     color: white;
     text-decoration: none;
-    background-color: #4a148c;
     padding: 10px 20px;
     border-radius: 5px;
     font-weight: bold;
+    transition: background-color 0.3s;
   }
   a:hover {
-    background-color: #6a1b9a;
+    background-color: #4a148c;
   }
 </style>
 </head>
 <body>
-<h1>Click the link below to view my resume:</h1>
-<a href="https://drive.google.com/file/d/1a8QDXx2UVJhxP9K9t3tWmTJbm46vMsps/view?usp=sharing" target="_blank">View My Resume</a>
+<div class="container">
+  <h1>Click the link below to view my resume:</h1>
+  <a href="https://drive.google.com/file/d/1a8QDXx2UVJhxP9K9t3tWmTJbm46vMsps/view?usp=sharing" target="_blank">View My Resume</a>
+</div>
 </body>
 </html>
